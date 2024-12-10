@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 import { 
   ChartBarIcon, 
   CloudIcon, 
-  LightningBoltIcon, 
-  DatabaseIcon 
+  BoltIcon, 
+  ServerIcon 
 } from '@heroicons/react/24/outline'
 
 const Features = () => {
@@ -22,13 +22,13 @@ const Features = () => {
       color: 'text-green-500'
     },
     {
-      icon: LightningBoltIcon,
+      icon: BoltIcon,
       title: 'High Performance',
       description: 'Lightning-fast processing with our optimized infrastructure.',
       color: 'text-yellow-500'
     },
     {
-      icon: DatabaseIcon,
+      icon: ServerIcon,
       title: 'Secure Storage',
       description: 'Enterprise-grade security and data protection.',
       color: 'text-purple-500'
