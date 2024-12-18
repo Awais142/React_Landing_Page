@@ -10,8 +10,8 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed w-[90%] mx-auto top-0 left-0 right-0 z-50 bg-white shadow-lg mt-2">
-      <div className="w-[80%] mx-auto">
+    <nav className="fixed w-[90%] mx-auto top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md shadow-lg mt-2">
+      <div className="w-[90%] mx-auto">
         <div className="flex items-center justify-between h-16">
           {/* Left: Logo */}
           <div className="flex-shrink-0">
@@ -33,6 +33,12 @@ const Navigation = () => {
               className="text-gray-700 hover:bg-blue-50 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
             >
               Features
+            </button>
+            <button 
+              onClick={() => scrollToSection('testimonials')} 
+              className="text-gray-700 hover:bg-blue-50 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Testimonials
             </button>
             <button 
               onClick={() => scrollToSection('pricing')} 
@@ -80,7 +86,7 @@ const Navigation = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white/70 backdrop-blur-md">
           <div className="w-[80%] mx-auto px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <button 
               onClick={() => scrollToSection('hero')} 
@@ -93,6 +99,12 @@ const Navigation = () => {
               className="text-gray-700 hover:bg-blue-50 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium w-full text-left"
             >
               Features
+            </button>
+            <button 
+              onClick={() => scrollToSection('testimonials')} 
+              className="text-gray-700 hover:bg-blue-50 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+            >
+              Testimonials
             </button>
             <button 
               onClick={() => scrollToSection('pricing')} 
